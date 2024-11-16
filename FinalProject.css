@@ -1,0 +1,176 @@
+/* Canvas */
+canvas {
+    position: absolute;
+    box-sizing: border-box;
+    height: 600px;
+    width: 1000px;
+    top: 100px;
+    left: 300px;
+    display: none;
+}
+
+/* Body */
+body {
+    background-image: url("pingpong.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+/* Font Face */
+@font-face {
+    font-family: 'Arcade';
+    src: url(ARCADE_I.TTF);
+}
+
+/* Headings */
+h1 {
+    font-weight: normal;
+    color: deeppink;
+}
+
+/* Paragraphs */
+p {
+    font-size: 14px; /* Overridden */
+    color: deeppink; /* Overridden */
+    text-align: left;
+}
+
+/* Links */
+a:link {
+    color: lightblue;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+a:active {
+    color: green;
+    text-decoration: line-through;
+}
+
+/* Images */
+img {
+    border: 2px solid lightblue;
+    box-shadow: 2px 2px 5px 2px black;
+}
+
+/* Buttons */
+.button {
+    background-color: deeppink;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px 5px black;
+    border-radius: 12px;
+    color: blue;
+    padding: 25px 120px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Arcade;
+    cursor: pointer;
+}
+
+/* Bulletin Board */
+div#bulletin-board {
+    position: relative;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 900px;
+    width: 1600px;
+    border: 2px solid black;
+    margin: 25px auto;
+    z-index: 1;
+    box-shadow: 0px 0px 10px 5px lightblue;
+}
+
+/* Subtitle */
+div#subtitle {
+    position: absolute;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+    top: 100px;
+    left: 0; /* Overridden */
+    text-align: center; /* Overridden */
+    color: deepskyblue; /* Overridden */
+    font-family: Arcade; /* Overridden */
+    font-size: 24px; /* Overridden */
+}
+
+/* Footer */
+div#footer {
+    position: absolute;
+    box-sizing: border-box;
+    height: 70px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    color: deeppink;
+    font-size: 14px;
+    z-index: 5;
+}
+
+/* Content */
+div#content {
+    position: absolute;
+    box-sizing: border-box;
+    height: auto;
+    width: 93.3%;
+    top: 300px;
+    left: 3.3%;
+    text-align: center; /* Overridden */
+    color: deepskyblue; /* Overridden */
+    font-family: Arcade; /* Overridden */
+    font-size: 18px;
+    z-index: 5;
+}
+
+/* Quit */
+div#quit {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 50px;
+    left: 40%;
+    display: none;
+}
+
+/* Scores */
+div#score1,
+div#score2 {
+    position: absolute;
+    box-sizing: border-box;
+    height: auto;
+    width: 500px;
+    top: 50px;
+    text-align: center;
+    color: deeppink;
+    font-family: Arcade;
+    font-size: 24px;
+    display: none;
+}
+
+div#score1 {
+    left: 300px;
+}
+
+div#score2 {
+    left: 800px;
+}
+
+/* Result */
+div#result {
+    position: absolute;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    top: 40%;
+    left: 0px;
+    text-align: center;
+    color: deeppink;
+    font-family: Arcade;
+    font-size: 36px;
+    display: none;
+}

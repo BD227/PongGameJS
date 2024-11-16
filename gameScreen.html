@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ping Pong</title>
+        <link rel="stylesheet" href="FinalProject.css">
+    </head>
+    <body bgcolor="lightblue" id="body">       
+        <div id="bulletin-board">
+            <div id="subtitle">
+                <h1>&nbsp;Ping Pong!</h1>
+                Brandon Dilallo
+            </div>
+            <div id="content">
+                <input type="button" class="button" value="Play" onclick="play();">
+                <br><br>
+                Number of Balls: 
+                <input type="text" size="5" id="ballCount">
+                <br><br>
+                Score to win:
+                <input type="text" size="6" id="scoreToWin">
+                <br><br>
+                Difficulty
+                <br>
+                <input type="radio" name="difficulty" id="easy" value="easy"> 
+                Easy
+                <input type="radio" name="difficulty" id="medium" value="medium"> 
+                Medium
+                <input type="radio" name="difficulty" id="hard" value="hard"> 
+                Hard
+                <br><br>
+                Ball Size
+                <br>
+                <input type="radio" name="ballSize" id="small" value="small"> 
+                Small
+                <input type="radio" name="ballSize" id="regular" value="regular"> 
+                Regular
+                <input type="radio" name="ballSize" id="large" value="large"> 
+                Large
+                <br><br><br>
+                <p>
+                    My very own version of Ping Pong with a twist! Be sure to try out all the different settings! To learn how to create ping pong in Javascript, I followed along with this course 
+                    <a href="https://www.udemy.com/course/code-your-first-game/" target="_blank">here.</a>
+                    However, I have since made substantial additions including this interactive menu!
+                </p>
+            </div>
+            <div id="footer">
+                <hr width="100%">
+                Background Image Credit: "Ping (Pong)" by dusterdb88 is licensed under CC BY-NC-SA 2.0
+            </div>
+            <canvas id="gameCanvas" width="0" height="0" style="border: 2px solid black;"></canvas>
+            <div id="quit">
+            <input type="button" class="button" value="Quit" onClick="window.location.reload();">
+            </div>
+            <div id="score1">
+                Player 1 score: 0
+            </div>
+            <div id="score2">
+                Player 2 score: 0
+            </div>
+            <div id="result">
+                <h1>VICTORY!</h1>
+                Click to Continue.
+            </div>
+        </div>
+
+        <script type="text/javascript" src="gameWithMenu.js"></script>
+    </body>
+</html>
